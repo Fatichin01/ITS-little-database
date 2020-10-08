@@ -1,0 +1,55 @@
+group: KendoITS
+Staff = {
+StaffID, Name, NRP, Gender, email, Jurusan, CoorID, DepID
+'S01', 'Mochammad Rizqul Fatichin', 05211940000027, 'Male', 'mochammadfatichin@gmail.com', 'Sistem Informasi', 'C01', 'D01'
+'S02', 'Muhammad Ali Prayoga', 04411940000030, 'Male', 'm.aliprayoga9@gmail.com', 'Teknik transportasi laut ', 'C02', 'D02'
+'S03', 'Mochammad Fajar Shidiq Sujana', 06211940000069, 'Male', 'fajarshi.jana@gmail.com', 'Statistika', 'C04', 'D04'
+'S04', 'I Gede Sanjaya Putra Vhyasa', 02311940000083, 'Male', 'sanjaya12bjm@gmail.com', 'Teknik Fisika', 'C02', 'D02'
+'S05', 'Emir Fakhri Muttaqiy ', 07211940000033, 'Male', 'efakhri.m@gmail.com', 'Teknik Komputer', 'C04', 'D04'
+'S06', 'Ivory Rasyida Noersjafrudin', 01111940000082, 'Female', 'rasyidseeing13@gmail.com', 'Fisika', 'C01', 'D01'
+'S07', 'Dinar Alifah Rahma ', 02311940000016, 'Female', 'liyamisu@gmail.com', 'Teknik Fisika', 'C03', 'D03'
+'S08', 'Ahmad Luthfi Hanif ', 05111940000179, 'Male', 'ahluthfiha24@gmail.com', 'Informatika ', 'C02', 'D02'
+'S09', 'Fauzhan Wahyudi ', 07211940000042, 'Male', 'fauzhanwahyudi@gmail.com', 'Teknik Komputer', 'C03', 'D03'
+'S10', 'Ganendra Aby Bhamakerti', 05211940000091, 'Male', 'ganendra2000@gmail.com', 'Sistem Informasi', 'C04', 'D04'
+}
+Department = {
+DepID, DepName, TotalStaff, CoorID
+'D01', 'BPH', 3, 'C01'
+'D02', 'Technical', 4, 'C02'
+'D03', 'Internal', 3, 'C03'
+'D04', 'External', 4, 'C04'
+}
+Coordinator = {
+CoorID, Name, NRP, Gender, email, Jurusan, DepID
+'C01', 'Muhammad Iqbaal Kurniawan', 04111840000077, 'Male', 'iqbaalkurniawan@gmsil.com', 'Teknik Perkapalan', 'D01'
+'C02', 'Leonardo Kiswanto Saputra', 05211840000053, 'Male', null, 'Sistem Informasi', 'D02'
+'C03', 'Arafi Hanggrahita Himantaka', 04111840000074, 'Male', null, 'Teknik Perkapalan', 'D03'
+'C04', 'Nizar Alief Hamizan', 05211840000049, 'Male', null,  'Sistem Informasi', 'D04'
+}
+Project = {
+ProjectID, Name, PICID, PICName
+'P01', 'Gashuku', 'C03', 'Arafi Hanggrahita Himantaka'
+'P02', 'EJKT', 'C02', 'Leonardo Kiswanto Saputra'
+'P03', 'Visiting Dojo', 'C04', 'Nizar Alief Hamizan'
+}
+Work = {
+StaffID, StaffName, ProjectID, ProjectName, Explanation
+'S09', 'Fauzhan Wahyudi ', 'P01', 'Gashuku', 'Coordinator'
+'S01', 'Mochammad Rizqul Fatichin', 'P01', 'Gashuku', 'Secretary'
+'S02', 'Muhammad Ali Prayoga', 'P01', 'Gashuku', 'Staff'
+'S07', 'Dinar Alifah Rahma ', 'P01', 'Gashuku', 'Staff'
+'S05', 'Emir Fakhri Muttaqiy ', 'P01', 'Gashuku', 'Staff'
+'S10', 'Ganendra Aby Bhamakerti', 'P01', 'Gashuku', 'Staff'
+'S04', 'I Gede Sanjaya Putra Vhyasa', 'P02', 'EJKT', 'Coordinator'
+'S06', 'Ivory Rasyida Noersjafrudin', 'P02', 'EJKT', 'Staff'
+'S08', 'Ahmad Luthfi Hanif ', 'P02', 'EJKT', 'Staff'
+'S10', 'Ganendra Aby Bhamakerti', 'P02', 'EJKT', 'Staff'
+'S03', 'Mochammad Fajar Shidiq Sujana', 'P03', 'Visiting Dojo', 'Coordinator'
+'S06', 'Ivory Rasyida Noersjafrudin', 'P03', 'Visiting Dojo', 'Secretary'
+'S01', 'Mochammad Rizqul Fatichin', 'P03', 'Visiting Dojo', 'Treasurer'
+'S02', 'Muhammad Ali Prayoga', 'P03', 'Visiting Dojo', 'Staff'
+'S05', 'Emir Fakhri Muttaqiy ', 'P03', 'Visiting Dojo', 'Staff'
+'S07', 'Dinar Alifah Rahma ', 'P03', 'Visiting Dojo', 'Staff'
+'S08', 'Ahmad Luthfi Hanif ', 'P03', 'Visiting Dojo', 'Staff'
+'S10', 'Ganendra Aby Bhamakerti', 'P03', 'Visiting Dojo', 'Staff'
+}
